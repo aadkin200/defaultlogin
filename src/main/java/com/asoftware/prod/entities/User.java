@@ -20,8 +20,8 @@ public class User {
 
     public User() {}
 
-    public User(String username, String password, boolean enabled) {
-        this.email = username;
+    public User(String email, String password, boolean enabled) {
+        this.email = email;
         this.password = password;
         this.enabled = enabled;
     }
@@ -30,12 +30,12 @@ public class User {
         return id;
     }
 
-    public String getUsername() {
+    public String getEmail() {
         return email;
     }
 
-    public void setUsername(String username) {
-        this.email = username;
+    public void setEmail(String email) {
+        this.email = email;
     }
 
     public String getPassword() {
